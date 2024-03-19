@@ -1,0 +1,33 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Kashif Jamal Soofi",
+    "classifications": ["Console"],
+    "name": "GTK4 Application Template",
+    "identity": "Template.Gtk4.App.CSharp",
+    "shortName": "gtk4-app",
+    "tags": {
+      "language": "C#",
+      "type": "project"
+    },
+    "exclude": [".vs/**/*", "**/[Bb]in/**", "**/[Oo]bj/**", ".template.config/**/*", "**/*.lock.json"],
+    "symbols": {
+      "name": {
+        "type": "parameter",
+        "datatype": "string",
+        "isRequired": true,
+        "replaces": "Template",
+        "fileRename": "Template"
+      },
+      "nameLower": {
+        "type": "generated",
+        "generator": "casing",
+        "parameters": {
+          "source": "name",
+          "toLower": true
+        },
+        "replaces": "template"
+      }
+    },
+    "sources": [
+    ]
+  }
