@@ -23,5 +23,6 @@
     <Content Include="templates\**\*" Exclude="templates\**\.vs;templates\**\bin\**;templates\**\obj\**;templates\aggregate\.gitignore;templates\**\.DS_Store">
       <PackagePath>content</PackagePath>
     </Content>
+    <Compile Remove="**\*" />
   </ItemGroup>
 </Project>

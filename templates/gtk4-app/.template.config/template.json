@@ -4,11 +4,13 @@
     "classifications": ["Console"],
     "name": "GTK4 Application Template",
     "identity": "Template.Gtk4.App.CSharp",
+    "groupIdentity": "Template.Gtk4.App",
     "shortName": "gtk4-app",
     "tags": {
       "language": "C#",
       "type": "project"
     },
+    "preferNameDirectory": true,
     "exclude": [".vs/**/*", "**/[Bb]in/**", "**/[Oo]bj/**", ".template.config/**/*", "**/*.lock.json"],
     "symbols": {
       "name": {
