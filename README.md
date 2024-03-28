@@ -1,7 +1,7 @@
 # GTK4 `dotnet new` Project Template
 I have been writing some samples using GTK4 using `GirCore` so its time to reduce the manual project setup steps and turn it into a `dotnet new` project template.  
 
-# 
+# Project Template
 Time to follow the excellent [article](https://devblogs.microsoft.com/dotnet/how-to-create-your-own-templates-for-dotnet-new/) by Syed Ibrahim.
 
 I have taken out the project setup section from my GTK 4 tutorials and turned it into the template. I have created a console application, added `GirCore.Gtk-4.0` nuget package to the project and updated the `Program.cs` to create a main Gtk window with `Hello World` label.  
