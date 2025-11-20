@@ -15,7 +15,7 @@ dotnet sln add Template.App/Template.App.csproj
 New lets add C# bindings for Gtk4 to our `Template.App` project
 ```shell
 cd Template.App
-dotnet add package GirCore.Gtk-4.0 --version 0.4.0
+dotnet add package GirCore.Gtk-4.0 --version 0.6.3
 ```
 Now we can run our application by executing:
 ```shell
