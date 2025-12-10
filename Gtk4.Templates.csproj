@@ -17,13 +17,8 @@
     <PackageProjectUrl>https://github.com/kashif-code-samples/gtk4-dotnet-template</PackageProjectUrl>
     <PackageType>Template</PackageType>
     <SuppressDependenciesWhenPacking>True</SuppressDependenciesWhenPacking>
-    <LangVersion>14</LangVersion>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Remove="Microsoft.NETCore.App" />
-    <Content Include="templates\**\*" Exclude="templates\**\.vs;templates\**\bin\**;templates\**\obj\**;templates\aggregate\.gitignore;templates\**\.DS_Store">
-      <PackagePath>content</PackagePath>
-    </Content>
-    <Compile Remove="**\*" />
+    <Content Include="content\**\*" Exclude="content\**\.vs;content\**\bin\**;content\**\obj\**;templates\**\.DS_Store" PackagePath="content" />
   </ItemGroup>
 </Project>
