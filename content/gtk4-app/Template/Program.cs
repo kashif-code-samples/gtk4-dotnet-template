@@ -1,4 +1,4 @@
-﻿var application = Gtk.Application.New("org.kashif-code-samples.template.app", Gio.ApplicationFlags.FlagsNone);
+﻿var application = Gtk.Application.New("org.kashif-code-samples.template", Gio.ApplicationFlags.FlagsNone);
 application.OnActivate += (sender, args) =>
 {
     var label = Gtk.Label.New("Hello World!");

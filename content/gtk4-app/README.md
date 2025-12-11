@@ -9,12 +9,12 @@ dotnet new sln --name Template
 
 Next we will add a console application and add that to our solution
 ```shell
-dotnet new console -o Template.App
-dotnet sln add Template.App/Template.App.csproj
+dotnet new console -o Template
+dotnet sln add Template/Template.csproj
 ```
-New lets add C# bindings for Gtk4 to our `Template.App` project
+New lets add C# bindings for Gtk4 to our `Template` project
 ```shell
-cd Template.App
+cd Template
 dotnet add package GirCore.Gtk-4.0 --version 0.6.3
 ```
 Now we can run our application by executing:
@@ -27,7 +27,7 @@ At this moment it would print `Hello, world!`.
 Lets start by creating GTK Application and add an `OnActivate` event handler to create the application window.
 
 ```csharp
-var application = Gtk.Application.New("org.kashif-code-samples.template.app", Gio.ApplicationFlags.FlagsNone);
+var application = Gtk.Application.New("org.kashif-code-samples.template", Gio.ApplicationFlags.FlagsNone);
 application.OnActivate += (sender, args) =>
 {
     var labelCounter = Gtk.Label.New("Hello World!");
